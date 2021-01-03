@@ -24,11 +24,12 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
+              "src/bible.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              
+                "src/styles.css"
             ],
             "scripts": []
           },
@@ -87,7 +88,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/bible.ico",
               "src/assets"
             ],
             "styles": [
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "promise-verse"
+  "defaultProject": "promise-verse",
+  "cli": {
+    "analytics": false
+  }
 }

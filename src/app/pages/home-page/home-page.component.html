@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/logo.svg" alt="" width="50" height="50">
+      Word of God
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div> -->
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+
+  <form class="row g-3 mt-5">
+    <div class="col-auto">
+      <label for="staticEmail2" class="visually-hidden">Email</label>
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Enter Your Name">
+    </div>
+    <div class="col-auto">
+      <label for="name" class="visually-hidden">Name</label>
+      <input type="text" #name (keyup.enter)="getName(name.value)" (blur)="getName(name.value); name.value='' "
+        class="form-control" id="name" placeholder="Name">
+    </div>
+    <div class="col-auto">
+      <button (click)="getName(name.value)" class="btn btn-primary mb-3">Find Your Promise Verse</button>
+    </div>
+
+  </form>
+
+
+</div>
+
+
+
+
+<div class="card container mb-3" style="max-width: 540px;" [hidden]="!uverse">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/logo.png" style="width: 10rem;" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Hello , {{uname}}</h5>
+        <h5 class="card-title">{{uverse.ref}}</h5>
+        <p class="card-text">{{uverse.body}}.</p>
+        <p class="card-text"><small class="text-muted">Happy New Year 2021</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="footer">
+  &copy; All rights reserved <a href="https://github.com/vijoytechy"> Techy Designs</a>
+</div>
