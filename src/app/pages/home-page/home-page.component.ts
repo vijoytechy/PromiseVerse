@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
    }
    uname: string='';
    uverse:any='';
-   
+   error:any='';
   ngOnInit(): void {
 
    
@@ -25,10 +25,20 @@ export class HomePageComponent implements OnInit {
   }
   getName(name:any){
    
-   
-    this.uname=name;
-    this.usersave.addUser(this.uname);
-    this.getVerse();
+    if(!name){
+      this.error='Please Enter your Name !'
+      this.uverse='';
+      
+    }
+    else{
+      this.uname=name;
+      this.error='';
+      this.usersave.addUser(this.uname);
+
+      this.getVerse();
+
+    }
+    
 
 
   }

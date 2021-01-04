@@ -6,3 +6,10 @@
     text-align: center;
     color:antiquewhite;
 }
+
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+    #footer{
+        viewport-fit:unset;
+    }
+}
