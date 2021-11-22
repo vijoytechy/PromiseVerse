@@ -1,5 +1,5 @@
 # PromiseVerse
-Go to https://vibrant-poincare-0be9c1.netlify.app/promise-verse/ Check The App
+Go to https://promiseverse.netlify.app/promise-verse/ Check The App
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
 ## Development server
